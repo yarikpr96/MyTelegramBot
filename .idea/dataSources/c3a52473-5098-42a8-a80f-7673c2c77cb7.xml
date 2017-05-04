@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="office@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="office">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bank"/>
+    <schema id="4" parent="1" name="book"/>
+    <schema id="5" parent="1" name="business"/>
+    <schema id="6" parent="1" name="comicat"/>
+    <schema id="7" parent="1" name="dddd"/>
+    <schema id="8" parent="1" name="fd"/>
+    <schema id="9" parent="1" name="friends"/>
+    <schema id="10" parent="1" name="information_schema"/>
+    <schema id="11" parent="1" name="javadev1900"/>
+    <schema id="12" parent="1" name="kitchen"/>
+    <schema id="13" parent="1" name="lodd"/>
+    <schema id="14" parent="1" name="log"/>
+    <schema id="15" parent="1" name="logos"/>
+    <schema id="16" parent="1" name="miss"/>
+    <schema id="17" parent="1" name="missprinces"/>
+    <schema id="18" parent="1" name="myshop"/>
+    <schema id="19" parent="1" name="mysql"/>
+    <schema id="20" parent="1" name="performance_schema"/>
+    <schema id="21" parent="1" name="photo"/>
+    <schema id="22" parent="1" name="pizza"/>
+    <schema id="23" parent="1" name="purse"/>
+    <schema id="24" parent="1" name="qqw"/>
+    <schema id="25" parent="1" name="shop"/>
+    <schema id="26" parent="1" name="shop2"/>
+    <schema id="27" parent="1" name="shop25"/>
+    <schema id="28" parent="1" name="shop26"/>
+    <schema id="29" parent="1" name="shop27"/>
+    <schema id="30" parent="1" name="shop28"/>
+    <schema id="31" parent="1" name="shop3"/>
+    <schema id="32" parent="1" name="shopuser"/>
+    <schema id="33" parent="1" name="socialtwitter"/>
+    <schema id="34" parent="1" name="som"/>
+    <schema id="35" parent="1" name="sombr"/>
+    <schema id="36" parent="1" name="sombrashop"/>
+    <schema id="37" parent="1" name="soom"/>
+    <schema id="38" parent="1" name="spambot"/>
+    <schema id="39" parent="1" name="springajax"/>
+    <schema id="40" parent="1" name="sys"/>
+    <schema id="41" parent="1" name="taxincomeepam"/>
+    <schema id="42" parent="1" name="telegram"/>
+    <schema id="43" parent="1" name="test"/>
+    <schema id="44" parent="1" name="trialshop"/>
+    <schema id="45" parent="1" name="world"/>
+    <table id="46" parent="2" name="answer"/>
+    <table id="47" parent="2" name="question"/>
+    <column id="48" parent="46" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="49" parent="46" name="answer">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="50" parent="46" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="47" name="question">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="47" name="answer_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="54" parent="47" name="FK_irwtp2qxp5gt1nanrhfsna5i6">
+      <ColNames>answer_id</ColNames>
+    </index>
+    <key id="55" parent="47" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="47" name="FK_irwtp2qxp5gt1nanrhfsna5i6">
+      <ColNames>answer_id</ColNames>
+      <RefSchemaName>office</RefSchemaName>
+      <RefTableName>answer</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
